@@ -9,7 +9,7 @@ package lr2_house;
  * @author Valchevskyi
  */
 public class House {
-    private static int counter = -1;
+    private static int counter = -1; // Counter objects for identification.
     private final int id;
     private int number;
     private double square;
