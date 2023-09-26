@@ -10,7 +10,7 @@ package lr2_house;
  */
 public class House {
     private static int counter = -1;
-    private int id;
+    private final int id;
     private int number;
     private double square;
     private int level;

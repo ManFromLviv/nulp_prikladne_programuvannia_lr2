@@ -62,10 +62,10 @@ public class Main {
     public void taskA(int countRooms) {
         int counter = 0;
         System.out.println("Task A: List houses with count rooms: " + countRooms + "\n" + line);
-        for (int i = 0; i < houses.length; i++) {
-            if (houses[i].getCountRooms() == countRooms) {
+        for (House house : houses) {
+            if (house.getCountRooms() == countRooms) {
                 counter++;
-                System.out.println(houses[i] + "\n" + line);
+                System.out.println(house + "\n" + line);
             }
         }
         outputCountHousesInTask(counter);
@@ -75,10 +75,10 @@ public class Main {
     public void taskB(int countRooms, int levelMin, int levelMax) {
         int counter = 0;
         System.out.println("Task B: List houses with count rooms: " + countRooms + " and level range: [" + levelMin + "; " + levelMax + "]\n" + line);
-        for (int i = 0; i < houses.length; i++) {
-            if (houses[i].getCountRooms() == countRooms && houses[i].getLevel() >= levelMin && houses[i].getLevel() <= levelMax) {
+        for (House house : houses) {
+            if (house.getCountRooms() == countRooms && house.getLevel() >= levelMin && house.getLevel() <= levelMax) {
                 counter++;
-                System.out.println(houses[i] + "\n" + line);
+                System.out.println(house + "\n" + line);
             }
         }
         outputCountHousesInTask(counter);
@@ -88,10 +88,10 @@ public class Main {
     public void taskC(double square) {
         int counter = 0;
         System.out.println("Task C: List houses where square more: " + square + "\n" + line);
-        for (int i = 0; i < houses.length; i++) {
-            if (houses[i].getSquare() > square) {
+        for (House house : houses) {
+            if (house.getSquare() > square) {
                 counter++;
-                System.out.println(houses[i] + "\n" + line);
+                System.out.println(house + "\n" + line);
             }
         }
         outputCountHousesInTask(counter);
