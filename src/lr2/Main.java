@@ -11,6 +11,7 @@ import lr2_house.House;
  *
  * @author Valchevskyi
  */
+
 public class Main {
 
     /**
